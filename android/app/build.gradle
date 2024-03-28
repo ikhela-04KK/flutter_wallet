@@ -28,6 +28,9 @@ if (flutterVersionName == null) {
 }
 
 
+// ext.enableCrashlytics = false
+
+
 android {
     compileSdkVersion flutter.compileSdkVersion
 
