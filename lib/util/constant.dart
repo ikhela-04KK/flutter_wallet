@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -6,6 +8,22 @@ const COLOR_ACCENT = Colors.orange;
 const COLOR_BACKGROUND_DARK = Color(0xFF171822);
 const COLOR_BACKGROUND = Colors.white;
 const COLOR_BACKGROUND_LIGHT = Color(0xFFF1F3F6);
+
+// Définir le schéma de couleur avec les couleurs nécessaires
+ColorScheme colorScheme = const ColorScheme(
+  brightness: Brightness.light, // Spécifie la luminosité, vous pouvez utiliser Brightness.dark pour le thème sombre
+  primary: COLOR_PRIMARY, // Couleur primaire
+  onPrimary: Colors.white, // Couleur du texte sur la couleur primaire
+  secondary: COLOR_ACCENT, // Couleur secondaire
+  onSecondary: Colors.white, // Couleur du texte sur la couleur secondaire
+  error: Colors.red, // Couleur d'erreur
+  onError: Colors.white, // Couleur du texte sur la couleur d'erreur
+  background: COLOR_BACKGROUND_DARK, // Couleur d'arrière-plan
+  onBackground: Colors.white, // Couleur du texte sur la couleur d'arrière-plan
+  surface: COLOR_BACKGROUND, // Couleur de surface
+  onSurface: Color(0xFF171822), // Couleur du texte sur la couleur de surface
+);
+
 
 ThemeData lightTheme = ThemeData(
   brightness: Brightness.light,
@@ -119,5 +137,5 @@ ThemeData darkTheme = ThemeData(
       color: Colors.white,
       fontWeight: FontWeight.w700,
     ),
-  ), colorScheme: const ColorScheme(background: COLOR_BACKGROUND_DARK),
+  ), colorScheme: colorScheme,
 );
